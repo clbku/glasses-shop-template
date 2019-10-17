@@ -25,9 +25,14 @@ header {
   padding-right: 10px;
 }
 
+.header__login {
+  position: relative;
+}
+
 .header__login a {
   color: #a9a9a9;
 }
+
 
 .header__login a:hover {
   color: #7e7e7e;
@@ -36,9 +41,8 @@ header {
 
 .header__bottom {
   width: 100%;
-  height: 120px;
   box-shadow: 0 10px 20px -2px #ececec;
-  padding: 30px;
+  padding: 10px 30px;
   text-transform: uppercase;
 }
 
@@ -51,7 +55,7 @@ header {
 }
 
 .header__logo img{
-  width: 150px;
+  width: 100px;
 }
 
 .slide {
@@ -73,6 +77,42 @@ header {
   padding-left: 10px;
   margin-bottom: 20px;
   text-transform: uppercase;
+}
+
+.toggle-list__header {
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+  line-height: 29px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.toggle-list__header::after {
+  content: '\f0d8';
+  font-family: 'FontAwesome';
+  position: absolute;
+  font-size: 18px;
+  line-height: 7px;
+  height: 7px;
+  left: 50%;
+  margin-left: -5px;
+  bottom: -1px;
+  color: #e8e8e8;
+}
+
+.toggle-list__body ul {
+  padding: 0 15px;
+}
+
+.toggle-list__body ul li {
+  padding: 10px 15px;
+  list-style: none;
+  border-bottom: 1px solid #ececec;
+}
+
+.toggle-list__active {
+  color: #337ab7;
 }
 
 .filter ul, .category ul, .main__promotion ul, .main__introdution ul {
@@ -779,4 +819,58 @@ input[type="submit"]:hover {
 .pay__body input[type="text"], .pay__body textarea {
   width: 100%;
   padding: 2px 6px;
+}
+
+.section {
+  
+}
+
+.section__title {
+  font-size: 20px;
+  color: #337ab7;
+  border-bottom: 1px solid #ececec;
+  margin: 30px  0;
+}
+
+.section__body {
+  width: 500px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.section__body label {
+  width: 25%;
+  text-align: right;
+  padding-right: 6px;
+  color: #7e7e7e;
+  font-size: 13px;
+}
+
+.section__body input {
+  width: 73%;
+  padding: 0 5px;
+  color: #7e7e7e;
+}
+
+.section__body .form-action {
+  width: 300px;
+  margin: auto;
+}
+
+.section__body .form-action {
+  text-align: center;
+}
+
+.section__body .form-action input {
+  width: auto;
+  background: #337ab7;
+  color: white;
+  border: 1px solid #337ab7;
+}
+
+.section__body select {
+  background: none;
+  width: 73%;
+  padding: 5px 2px;
+  color: #7e7e7e;
 }
