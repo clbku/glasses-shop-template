@@ -177,7 +177,7 @@ header {
   display: block;
 }
 
-.filter ul li:hover, .filter ul li:hover a, .category ul li:hover, .category ul li:hover a {
+.filter ul li label:hover, .filter ul li:hover a, .category ul li:hover, .category ul li:hover a {
   text-decoration: none;
   color: #337ab7
 }
@@ -327,7 +327,7 @@ input[type="submit"]:hover {
 
 .adv {
   width: 100%;
-  margin-bottom: 30px;
+  margin: 100px 0;
 }
 
 .adv img {
@@ -337,11 +337,15 @@ input[type="submit"]:hover {
 
 .products {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
 
 .products--orange {
   border-top: 3px solid orange;
+}
+
+.products--blue {
+  border-top: 3px solid #337ab7;
 }
 
 .products__left {
@@ -360,6 +364,10 @@ input[type="submit"]:hover {
   margin: 10px;
   color: white;
   font-size: 20px;
+}
+
+.products__bestseller--blue i {
+  background: #337ab7;
 }
 
 .bestseller__category ul {
@@ -387,6 +395,12 @@ input[type="submit"]:hover {
 
 .products--orange .bestseller__category ul li:hover {
   background: orange;
+  cursor: pointer;
+  color: white;
+}
+
+.products--blue .bestseller__category ul li:hover {
+  background: #337ab7;
   cursor: pointer;
   color: white;
 }
@@ -659,8 +673,13 @@ input[type="submit"]:hover {
 }
 
 .detail__image .zoom-main img {
-  width: 100%;
-  height: auto;
+  height: 100%;
+}
+
+@media (max-width: 735px) {
+  .zoom-main {
+      height: 80% !important;
+  }
 }
 
 .detail__title {
@@ -967,3 +986,10 @@ p {
   }
 }
 
+.main__detail .row {
+  margin-bottom: 30px;
+}
+
+.filter-group li.active {
+  background: #eaeaea;
+}

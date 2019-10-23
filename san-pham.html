@@ -28,39 +28,23 @@
           </div>
           <div class="col-sm-6 text-right">
             <div class="header__login">
-              <a href="#">Đăng nhập</a> /
-              <a href="#">Đăng ký</a>
+              <a href="dang-nhap.html">Đăng nhập</a>
+              /
+              <a href="dang-ky.html">Đăng ký</a>
+
             </div>
+
           </div>
         </div>
-
-        <!-- <div class="header__account">
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="header__email">
-                  <i class="fa fa-envelope-o"></i>
-                  <a href="mailto:glasses@shop.com">glasses@shop.com</a>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <span>|</span>
-                <div class="header__phone">
-                  <i class="fa fa-phone"></i>
-                  <span>+84 987 654 321</span>
-                </div>
-              </div>
-            </div>
-          </div> -->
       </div>
 
     </div>
-    <div class="header__bottom">
+    <div class=" header__bottom">
       <div class="container">
         <nav class="navbar navbar-expand-md">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <!-- <span class="navbar-toggler-icon"></span> -->
-            <i class="fa  fa-th-list" style="color: #797979"></i>
+            <i class="fa fa-th-list" style="color: #797979"></i>
           </button>
           <a class="navbar-brand header__logo" href="#">
             <img src="./images/logo.png" alt="">
@@ -70,7 +54,7 @@
             <div class="mr-auto"></div>
             <ul class="navbar-nav">
               <li class="nav-item active">
-                <a class="nav-link" href="#">Trang chủ <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="trang-chu.html">Trang chủ <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="gioi-thieu.html">Giới thiệu</a>
@@ -81,21 +65,22 @@
                   Sản phẩm
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Mắt kính thời trang</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="./san-pham.html">Mắt kính thời trang</a>
+                  <a class="dropdown-item" href="./san-pham.html">Gọng kính</a>
+                  <a class="dropdown-item" href="./san-pham.html">Mắt kính</a>
+                  <a class="dropdown-item" href="./san-pham.html">Kính áp tròng</a>
+                  <a class="dropdown-item" href="./san-pham.html">Kính râm</a>
                 </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Tin tức</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Liên hệ</a>
+                <a class="nav-link" href="lien-he.html">Liên hệ</a>
               </li>
             </ul>
-            <a href="#" class="header__shopping-cart">
-              <i class="fa fa-shopping-cart "></i>
+            <a href="thanh-toan.html" class="header__shopping-cart">
+              <i class="fa fa-shopping-cart"></i>
             </a>
 
           </div>
@@ -114,7 +99,51 @@
               Bộ lọc
             </div>
             <ul>
+              <!-- item -->
               <li data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <div class="filter__item">
+                  <div class="filter__icon"></div>
+                  <div class="filter__name">
+                    <a>Danh mục</a>
+                    <div class="filter__arrow float-right">
+                      <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                  </div>
+                  <hr>
+                </div>
+              </li>
+              <li>
+                <div id="collapseOne" class="collapse filter__subitem">
+                  <ul>
+                    <li>
+                      <input id="f1" class="messageCheckbox" type="checkbox" value=".th-chrome-hearts">
+                      <label for="f1">Dành cho Nam</label>
+                    </li>
+                    <li>
+                      <input id="f2" class="messageCheckbox" type="checkbox" value=".th-ray-ban">
+                      <label for="f2">Dành cho Nữ</label>
+                    </li>
+                    <li>
+                      <input id="f3" class="messageCheckbox" type="checkbox" value=".th-ray-ban">
+                      <label for="f3"> Dành cho Trẻ em</label>
+                    </li>
+                    <li>
+                      <input id="f4" class="messageCheckbox" type="checkbox" value=".th-chrome-hearts">
+                      <label for="f4">Hàng mới về</label>
+                    </li>
+                    <li>
+                      <input id="f5" class="messageCheckbox" type="checkbox" value=".th-ray-ban">
+                      <label for="f5">Bán chạy</label>
+                    </li>
+                    <li>
+                      <input id="f6" class="messageCheckbox" type="checkbox" value=".th-ray-ban">
+                      <label for="f6">Thịnh hành</label>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- item -->
+              <li data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                 <div class="filter__item">
                   <div class="filter__icon"></div>
                   <div class="filter__name">
@@ -127,21 +156,19 @@
                 </div>
               </li>
               <li>
-                <!--<div id="collapseOne" class="collapse filter__subitem" aria-label="headingOne">-->
-                <div id="collapseOne" class="collapse filter__subitem" >
+                <div id="collapseTwo" class="collapse filter__subitem">
                   <ul>
                     <li>
-                      <input class="messageCheckbox" type="checkbox" value=".th-chrome-hearts">
-                      Chrome Hearts
+                      <input id="f7" class="messageCheckbox" type="checkbox" value=".th-chrome-hearts">
+                      <label for="f7">Chrome Hearts</label>
                     </li>
                     <li>
-                      <input class="messageCheckbox" type="checkbox" value=".th-ray-ban">
-                      Ray-Ban
+                      <input id="f8" class="messageCheckbox" type="checkbox" value=".th-ray-ban">
+                      <label for="f8">Ray Ban</label>
                     </li>
                   </ul>
                 </div>
               </li>
-              
             </ul>
           </div>
 
@@ -155,105 +182,105 @@
             </ul>
           </div>
           <div class="products__main">
-              <div class="row">
-                <div class="col-sm-4 th-chrome-hearts">
-                  <div class="product__card">
-                    <div class="bestseller__image">
-                      <img src="./images/rb3025-112-19.png" alt="">
+            <div class="row">
+              <div class="col-sm-4 th-chrome-hearts">
+                <div class="product__card">
+                  <div class="bestseller__image">
+                    <img src="./images/rb3025-112-19.png" alt="">
+                  </div>
+                  <div class="bestseller__info">
+                    <div class="bestseller__name">
+                      <a href="chi-tiet.html">RAY-BAN AVIATOR FLASH LENSES RB3025 112/19</a><br>
                     </div>
-                    <div class="bestseller__info">
-                      <div class="bestseller__name">
-                        <a href="#">RAY-BAN AVIATOR FLASH LENSES RB3025 112/19</a><br>
-                      </div>
-                      <div class="promotion__price">
-                        <span class="promotion__price--line-through">200.000đ</span>
-                        95.200đ
-                      </div>
+                    <div class="promotion__price">
+                      <span class="promotion__price--line-through">200.000đ</span>
+                      95.200đ
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-4 th-ray-ban">
-                  <div class="product__card">
-                    <div class="bestseller__image">
-                      <img src="./images/rb3025-112-19.png" alt="">
+              </div>
+              <div class="col-sm-4 th-ray-ban">
+                <div class="product__card">
+                  <div class="bestseller__image">
+                    <img src="./images/rb3025-112-19.png" alt="">
+                  </div>
+                  <div class="bestseller__info">
+                    <div class="bestseller__name">
+                      <a href="chi-tiet.html">RAY-BAN AVIATOR FLASH LENSES RB3025 112/19</a><br>
                     </div>
-                    <div class="bestseller__info">
-                      <div class="bestseller__name">
-                        <a href="#">RAY-BAN AVIATOR FLASH LENSES RB3025 112/19</a><br>
-                      </div>
-                      <div class="promotion__price">
-                        <span class="promotion__price--line-through">200.000đ</span>
-                        95.200đ
-                      </div>
+                    <div class="promotion__price">
+                      <span class="promotion__price--line-through">200.000đ</span>
+                      95.200đ
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-4 mk">
-                  <div class="product__card">
-                    <div class="bestseller__image">
-                      <img src="./images/rb3025-112-19.png" alt="">
+              </div>
+              <div class="col-sm-4 mk">
+                <div class="product__card">
+                  <div class="bestseller__image">
+                    <img src="./images/rb3025-112-19.png" alt="">
+                  </div>
+                  <div class="bestseller__info">
+                    <div class="bestseller__name">
+                      <a href="chi-tiet.html">RAY-BAN AVIATOR FLASH LENSES RB3025 112/19</a><br>
                     </div>
-                    <div class="bestseller__info">
-                      <div class="bestseller__name">
-                        <a href="#">RAY-BAN AVIATOR FLASH LENSES RB3025 112/19</a><br>
-                      </div>
-                      <div class="promotion__price">
-                        <span class="promotion__price--line-through">200.000đ</span>
-                        95.200đ
-                      </div>
+                    <div class="promotion__price">
+                      <span class="promotion__price--line-through">200.000đ</span>
+                      95.200đ
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-4 kat">
-                  <div class="product__card">
-                    <div class="bestseller__image">
-                      <img src="./images/rb3025-112-19.png" alt="">
+              </div>
+              <div class="col-sm-4 kat">
+                <div class="product__card">
+                  <div class="bestseller__image">
+                    <img src="./images/rb3025-112-19.png" alt="">
+                  </div>
+                  <div class="bestseller__info">
+                    <div class="bestseller__name">
+                      <a href="chi-tiet.html">RAY-BAN AVIATOR FLASH LENSES RB3025 112/19</a><br>
                     </div>
-                    <div class="bestseller__info">
-                      <div class="bestseller__name">
-                        <a href="#">RAY-BAN AVIATOR FLASH LENSES RB3025 112/19</a><br>
-                      </div>
-                      <div class="promotion__price">
-                        <span class="promotion__price--line-through">200.000đ</span>
-                        95.200đ
-                      </div>
+                    <div class="promotion__price">
+                      <span class="promotion__price--line-through">200.000đ</span>
+                      95.200đ
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-4 kr">
-                  <div class="product__card">
-                    <div class="bestseller__image">
-                      <img src="./images/rb3025-112-19.png" alt="">
+              </div>
+              <div class="col-sm-4 kr">
+                <div class="product__card">
+                  <div class="bestseller__image">
+                    <img src="./images/rb3025-112-19.png" alt="">
+                  </div>
+                  <div class="bestseller__info">
+                    <div class="bestseller__name">
+                      <a href="chi-tiet.html">RAY-BAN AVIATOR FLASH LENSES RB3025 112/19</a><br>
                     </div>
-                    <div class="bestseller__info">
-                      <div class="bestseller__name">
-                        <a href="#">RAY-BAN AVIATOR FLASH LENSES RB3025 112/19</a><br>
-                      </div>
-                      <div class="promotion__price">
-                        <span class="promotion__price--line-through">200.000đ</span>
-                        95.200đ
-                      </div>
+                    <div class="promotion__price">
+                      <span class="promotion__price--line-through">200.000đ</span>
+                      95.200đ
                     </div>
                   </div>
                 </div>
-                <div class="col-sm-4 mktt">
-                  <div class="product__card">
-                    <div class="bestseller__image">
-                      <img src="./images/rb3025-112-19.png" alt="">
+              </div>
+              <div class="col-sm-4 mktt">
+                <div class="product__card">
+                  <div class="bestseller__image">
+                    <img src="./images/rb3025-112-19.png" alt="">
+                  </div>
+                  <div class="bestseller__info">
+                    <div class="bestseller__name">
+                      <a href="chi-tiet.html">RAY-BAN AVIATOR FLASH LENSES RB3025 112/19</a><br>
                     </div>
-                    <div class="bestseller__info">
-                      <div class="bestseller__name">
-                        <a href="#">RAY-BAN AVIATOR FLASH LENSES RB3025 112/19</a><br>
-                      </div>
-                      <div class="promotion__price">
-                        <span class="promotion__price--line-through">200.000đ</span>
-                        95.200đ
-                      </div>
+                    <div class="promotion__price">
+                      <span class="promotion__price--line-through">200.000đ</span>
+                      95.200đ
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
         </div>
       </div>
     </div>
