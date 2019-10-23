@@ -682,6 +682,14 @@ input[type="submit"]:hover {
   }
 }
 
+.zoom-main span {
+  border: none;
+}
+
+.tab-content {
+  padding-top: 20px;
+}
+
 .detail__title {
   font-size: 20px;
 }
