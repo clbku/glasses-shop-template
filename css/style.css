@@ -46,6 +46,11 @@ header {
   text-transform: uppercase;
 }
 
+.header__bottom form .input-group {
+  max-width: 500px;
+  margin: auto;
+}
+
 .header__bottom a {
   color: #3f3f3f;
 }
@@ -922,9 +927,9 @@ input[type="submit"]:hover {
   color: #7e7e7e;
 }
 
-p {
+/* p {
   text-align: justify;
-}
+} */
 
 @media (min-width: 1100px){
   .container{
@@ -1000,4 +1005,53 @@ p {
 
 .filter-group li.active {
   background: #eaeaea;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.btn-circle {
+  border-radius: 15px;
+}
+
+#step-3 .success h1 {
+  color: #218838;
+}
+
+#step-3 .cash {
+  color: #337ab7;
+  font-size: 20px;
+}
+
+#step-3 .failed h1 {
+  color: red;
+}
+
+#step-3 .cash {
+  color: #337ab7;
+  font-size: 20px;
+}
+
+.header__shopping-cart {
+  position: relative;
+}
+
+.header__shopping-cart span {
+  position: absolute;
+  background: #337ab7;
+  color: white;
+  border-radius: 10px;
+  width: 15px;
+  height: 15px;
+  font-size: 13px;
+  top: -5px;
+  right: -10px;
+  text-align: center;
+  line-height: 15px;
+}
+
+.product__description {
+  font-size: 13px;
+  color: #7e7e7e;
 }

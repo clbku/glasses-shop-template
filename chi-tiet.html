@@ -74,14 +74,12 @@
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Tin tức</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="lien-he.html">Liên hệ</a>
               </li>
             </ul>
             <a href="thanh-toan.html" class="header__shopping-cart">
               <i class="fa fa-shopping-cart"></i>
+              <span>1</span>
             </a>
 
           </div>
@@ -89,7 +87,7 @@
       </div>
 
     </div>
-  </header>
+</header>
   <main>
     <div class="container">
       <div class="row">
@@ -119,7 +117,7 @@
                   ut erat hendrerit, nec efficitur est viverra. Phasellus et augue dignissim, efficitur lectus quis,
                   fermentum purus.
                 </div>
-                <form method="post">
+                <form method="post" action="thanh-toan.html">
                   <div class="detail__qty">
                     <label>Số lượng:</label>
                     <input type="number" value="0" min="0" max="100">
@@ -319,31 +317,36 @@
             </button>
           </div>
           <div class="modal-body">
-            <div class="card__item">
-              <!-- <div class="row">
-                  <div class="col-sm-3">
-                    <img src="./images/rb3025-112-19.png" style="width: 100%;">
-                  </div>
-                </div> -->
-              <table>
-                <tr>
-                  <th></th>
-                  <th>Tên sản phẩm</th>
-                  <th>Số lượng</th>
-                  <th>Giá tiền</th>
-                  <th></th>
-                </tr>
-                <tr>
-                  <td>
-                    <img src="./images/4909181965824--1-.u4064.d20170824.t224629.414070.jpg"
-                      style="width: 100%; max-width: 100px;" alt="Load photo fail">
-                  </td>
-                  <td>RAY-BAN AVIATOR FLASH LENSES RB3025 112/19</td>
-                  <td><input type="number" value="0" min="0" max="100"></td>
-                  <td>100.000đ</td>
-                  <td><a href="#">Xóa</a></td>
-                </tr>
+            <div class="setup-content" id="step-1">
+              <table class="table table-bordered table-customize table-responsive">
+                <thead>
+                  <tr>
+                    <th style="width: 50%">Sản phẩm</th>
+                    <th style="max-width: 200px;">Hình ảnh</th>
+                    <th style="width: 10%;">Giá</th>
+                    <th>Số lượng</th>
+                    <th style="width: 10%;">Thành tiền</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-title="Sản phẩm"><a href="#">
+                        RAY-BAN AVIATOR FLASH LENSES RB3025 112/19</a></td>
+                    <td data-title="Hình ảnh"><img src="./images/rb3025-112-19.png" alt=""></td>
+                    <td data-title="Giá">90.000đ</td>
+                    <td data-title="Số lượng"><input type="number" value=2 min=0 max=2></td>
+                    <td data-title="Thành tiền">180.000đ</td>
+                    <td><a href="#" style="color: red"><i class="far fa-trash-alt"></i></a></td>
+                  </tr>
+
+                </tbody>
               </table>
+              <div class="text-right">
+                <div class="product__price"><span style="color: #797979; font-size: 13px;"> Tổng thanh toán:</span>
+                  180.000đ</div>
+                <button class="btn btn-primary nextBtn btn-lg pull-right" type="button">Thanh toán</button>
+              </div>
             </div>
           </div>
           <div class="modal-footer">

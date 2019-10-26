@@ -73,18 +73,28 @@
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Tin tức</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="lien-he.html">Liên hệ</a>
               </li>
             </ul>
             <a href="thanh-toan.html" class="header__shopping-cart">
               <i class="fa fa-shopping-cart"></i>
+              <span>1</span>
             </a>
 
           </div>
         </nav>
+        <div class="text-center mt-3">
+          <form method="GET" action="san-pham.html">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Tìm kiếm...">
+                <div class="input-group-append">
+                  <button class="btn btn-secondary" type="button">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </div>
+              </div>
+          </form>
+        </div>
       </div>
 
     </div>
@@ -213,15 +223,7 @@
                   <div class="product">
                     <div class="row">
                       <div class="col-sm-5">
-                        <div class="product-image-card">
-                          <div class="product-image-card__dark"></div>
-                          <div class="product-image-card__action">
-                            <a href="#"><i class="fas fa-cart-plus"></i></a>
-                            <a href="#"><i class="fa fa-th-list"></i></a>
-                          </div>
-
-                          <img class="product-image-card__image" src="./images/rb3025-112-19.png" alt=""><br>
-                        </div>
+                        <img class="" src="./images/rb3025-112-19.png" alt=""><br>
                       </div>
                       <div class="col-sm-7">
                         <div class="product__name">
@@ -237,6 +239,16 @@
                           suscipit tellus, auctor convallis lectus.
                           Proin
                           ultricies sagittis eleifend. </p>
+                        <form method="post" action="thanh-toan.html">
+                          <div class="detail__action">
+                            <button type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn__add">
+                              <i class="fas fa-cart-plus"></i> Thêm giỏ hàng
+                            </button>
+                            <button type="submit" class="btn btn__cash">
+                              <i class="fas fa-money-bill-wave"></i> Mua ngay
+                            </button>
+                          </div>
+                        </form>
                       </div>
                     </div>
                   </div>
@@ -281,15 +293,7 @@
                   <div class="promotion__product">
                     <div class="row">
                       <div class="col-sm-4">
-                        <div class="product-image-card">
-                          <div class="product-image-card__dark"></div>
-                          <div class="product-image-card__action">
-                            <a href="#"><i class="fas fa-cart-plus"></i></a>
-                            <a href="#"><i class="fa fa-th-list"></i></a>
-                          </div>
-
-                          <img class="product-image-card__image" src="./images/rb3025-112-19.png" alt=""><br>
-                        </div>
+                        <img class="" src="./images/rb3025-112-19.png" alt=""><br>
                       </div>
                       <div class="col-sm-8">
                         <div class="promotion__name">
@@ -308,15 +312,7 @@
                   <div class="promotion__product">
                     <div class="row">
                       <div class="col-sm-4">
-                        <div class="product-image-card">
-                          <div class="product-image-card__dark"></div>
-                          <div class="product-image-card__action">
-                            <a href="#"><i class="fas fa-cart-plus"></i></a>
-                            <a href="#"><i class="fa fa-th-list"></i></a>
-                          </div>
-
-                          <img class="product-image-card__image" src="./images/rb3025-112-19.png" alt=""><br>
-                        </div>
+                        <img class="" src="./images/rb3025-112-19.png" alt=""><br>
                       </div>
                       <div class="col-sm-8">
                         <div class="promotion__name">
@@ -335,15 +331,7 @@
                   <div class="promotion__product">
                     <div class="row">
                       <div class="col-sm-4">
-                        <div class="product-image-card">
-                          <div class="product-image-card__dark"></div>
-                          <div class="product-image-card__action">
-                            <a href="#"><i class="fas fa-cart-plus"></i></a>
-                            <a href="#"><i class="fa fa-th-list"></i></a>
-                          </div>
-
-                          <img class="product-image-card__image" src="./images/rb3025-112-19.png" alt=""><br>
-                        </div>
+                        <img class="" src="./images/rb3025-112-19.png" alt=""><br>
                       </div>
                       <div class="col-sm-8">
                         <div class="promotion__name">
@@ -362,15 +350,7 @@
                   <div class="promotion__product">
                     <div class="row">
                       <div class="col-sm-4">
-                        <div class="product-image-card">
-                          <div class="product-image-card__dark"></div>
-                          <div class="product-image-card__action">
-                            <a href="#"><i class="fas fa-cart-plus"></i></a>
-                            <a href="#"><i class="fa fa-th-list"></i></a>
-                          </div>
-
-                          <img class="product-image-card__image" src="./images/rb3025-112-19.png" alt=""><br>
-                        </div>
+                        <img class="" src="./images/rb3025-112-19.png" alt=""><br>
                       </div>
                       <div class="col-sm-8">
                         <div class="promotion__name">
@@ -664,8 +644,56 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Chi tiết giỏ hàng</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="setup-content" id="step-1">
+              <table class="table table-bordered table-customize table-responsive">
+                <thead>
+                  <tr>
+                    <th style="width: 50%">Sản phẩm</th>
+                    <th style="max-width: 200px;">Hình ảnh</th>
+                    <th style="width: 10%;">Giá</th>
+                    <th>Số lượng</th>
+                    <th style="width: 10%;">Thành tiền</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-title="Sản phẩm"><a href="#">
+                        RAY-BAN AVIATOR FLASH LENSES RB3025 112/19</a></td>
+                    <td data-title="Hình ảnh"><img src="./images/rb3025-112-19.png" alt=""></td>
+                    <td data-title="Giá">90.000đ</td>
+                    <td data-title="Số lượng"><input type="number" value=2 min=0 max=2></td>
+                    <td data-title="Thành tiền">180.000đ</td>
+                    <td><a href="#" style="color: red"><i class="far fa-trash-alt"></i></a></td>
+                  </tr>
 
-
+                </tbody>
+              </table>
+              <div class="text-right">
+                <div class="product__price"><span style="color: #797979; font-size: 13px;"> Tổng thanh toán:</span>
+                  180.000đ</div>
+                <button class="btn btn-primary nextBtn btn-lg pull-right" type="button">Thanh toán</button>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
   <footer>
